@@ -12,4 +12,4 @@ Examples for my talk at the 1st **phplx** meetup
 
 ## LICENSE
 
-See LICENSE file
+See **LICENSE** file
