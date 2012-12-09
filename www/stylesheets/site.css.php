@@ -6,7 +6,7 @@ use Assetic\Asset\FileAsset;
 use Assetic\Filter\Yui\CssCompressorFilter;
 use Assetic\Filter\CompassFilter;
 
-$yuiFilter = new CssCompressorFilter('../../java/yuicompressor-2.4.7.jar');
+$yuiFilter     = new CssCompressorFilter('../../java/yuicompressor-2.4.7.jar');
 $compassFilter = new CompassFilter();
 
 $cssAsset = new FileAsset(
