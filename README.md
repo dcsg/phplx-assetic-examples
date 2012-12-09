@@ -8,7 +8,8 @@ Examples for my talk at the 1st **phplx** meetup
 
 ## Examples
 
-To use the examples you just need to run index.html on a webserver with Apache 2.x and PHP 5.3+
+To use the examples you just need to checkout the branches below and run index.html on a webserver with Apache 2.x and
+PHP 5.3+
 
 * [Asset with Filter](https://github.com/danielcsgomes/phplx-assetic-examples)
 * [Asset Collection](https://github.com/danielcsgomes/phplx-assetic-examples/tree/asset-collection)
