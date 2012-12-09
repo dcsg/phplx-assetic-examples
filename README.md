@@ -6,10 +6,14 @@ Examples for my talk at the 1st **phplx** meetup
 
 * [Slides](http://danielcsgomes.com/talks/introduction-to-assetic-at-phplx)
 
-## Examples
+## Installation
 
-To use the examples you just need to checkout the branches below and run index.html on a webserver with Apache 2.x and
-PHP 5.3+
+* Clone the branches listed on the **Examples** section.
+* [Get Composer](http://getcomposer.org/download/) - `curl -s https://getcomposer.org/installer | php`
+* php composer.phar install
+* run www/index.html on a webserver with the requirements listed below 
+
+## Examples branches
 
 * [Asset with Filter](https://github.com/danielcsgomes/phplx-assetic-examples)
 * [Asset Collection](https://github.com/danielcsgomes/phplx-assetic-examples/tree/asset-collection)
