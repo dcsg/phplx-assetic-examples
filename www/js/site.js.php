@@ -14,7 +14,9 @@ $jsAC = new AssetCollection(
          new FileAsset(
              '../javascripts/jquery-1.8.3.js'
          ),
-         new GlobAsset('../javascripts/twitter-bootstrap/*.js')
+         new AssetCollection(
+             array(new GlobAsset('../javascripts/twitter-bootstrap/*.js'))
+         )
     ),
     array($yuiFilter)
 );
