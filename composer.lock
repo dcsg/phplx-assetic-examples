@@ -1,0 +1,126 @@
+{
+    "hash": "30a80258b8e59b3a653098d740b6dbf4",
+    "packages": [
+        {
+            "name": "kriswallsmith/assetic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/kriswallsmith/assetic.git",
+                "reference": "d6203098559cf9fc90e2890c10533d0adad33bd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/kriswallsmith/assetic/archive/d6203098559cf9fc90e2890c10533d0adad33bd0.zip",
+                "reference": "d6203098559cf9fc90e2890c10533d0adad33bd0",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/process": ">=2.1.0,<2.3-dev",
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "twig/twig": ">=1.6.0,<2.0",
+                "leafo/lessphp": "*",
+                "leafo/scssphp": "*",
+                "ptachoire/cssembed": "*",
+                "leafo/scssphp-compass": "*"
+            },
+            "suggest": {
+                "twig/twig": "Assetic provides the integration with the Twig templating engine",
+                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
+            },
+            "time": "1352285252",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Assetic": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Asset Management for PHP",
+            "homepage": "https://github.com/kriswallsmith/assetic",
+            "keywords": [
+                "assets",
+                "compression",
+                "minification"
+            ]
+        },
+        {
+            "name": "symfony/process",
+            "version": "v2.1.3",
+            "target-dir": "Symfony/Component/Process",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Process",
+                "reference": "v2.1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony/Process/zipball/v2.1.3",
+                "reference": "v2.1.3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "2012-10-20 00:10:30",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Process": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "http://symfony.com"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "kriswallsmith/assetic": 20
+    }
+}
