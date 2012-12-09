@@ -5,6 +5,7 @@ require_once '../../vendor/autoload.php';
 use Assetic\Asset\FileAsset;
 use Assetic\Asset\AssetCollection;
 use Assetic\Asset\AssetReference;
+use Assetic\Factory\AssetFactory;
 use Assetic\AssetManager;
 use Assetic\FilterManager;
 use Assetic\Asset\GlobAsset;
@@ -19,21 +20,27 @@ $assetManager = new AssetManager();
 // Sets the jquery AM
 $assetManager->set(
     'jquery',
-    new FileAsset('../javascripts/jquery-1.8.3.js'),
-    array($filterManager->get('yui_js'))
+    new FileAsset('../javascripts/jquery-1.8.3.js')
 );
 
-// Sets the twitter bootstrap AM that will referencing the jquery AM
-$assetManager->set(
-    'twitter_bootstrap',
-    new AssetCollection(
-        array(
-             new AssetReference($assetManager, 'jquery'),
-             new GlobAsset('../javascripts/twitter-bootstrap/*.js')
-        ),
-        array($filterManager->get('yui_js'))
+$assetFactory = new AssetFactory('../');
+
+// uncomment the next line to enable debug mode
+//$assetFactory->setDebug(true); // with this all filters with ? before the filter name will not be used
+
+$assetFactory->setAssetManager($assetManager);
+$assetFactory->setFilterManager($filterManager);
+
+$js = $assetFactory->createAsset(
+    array(
+         '@jquery',
+         'javascripts/twitter-bootstrap/*.js'
+    ),
+    array(
+         '?yui_js'
     )
 );
 
+
 header('Content-Type: application/javascript');
-echo $assetManager->get('twitter_bootstrap')->dump();
+echo $js->dump();
