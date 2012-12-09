@@ -13,6 +13,8 @@ Examples for my talk at the 1st **phplx** meetup
 * php composer.phar install
 * run www/index.html on a webserver with the requirements listed below 
 
+**NOTE:** You will note see any content this will only dump css and js files. The files that contain the examples are: `www/stylesheets/site.css.php` and `www/js/site.js.php`
+
 ## Examples branches
 
 * [Asset with Filter](https://github.com/danielcsgomes/phplx-assetic-examples)
