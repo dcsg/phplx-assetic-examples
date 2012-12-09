@@ -3,12 +3,9 @@
 require_once '../../vendor/autoload.php';
 
 use Assetic\Asset\FileAsset;
-use Assetic\Asset\AssetCollection;
-use Assetic\Asset\AssetReference;
 use Assetic\Factory\AssetFactory;
 use Assetic\AssetManager;
 use Assetic\FilterManager;
-use Assetic\Asset\GlobAsset;
 use Assetic\Filter\Yui\JsCompressorFilter;
 
 
